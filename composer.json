@@ -1,0 +1,17 @@
+{
+    "name": "alanvaill/laravel-profiler-admin",
+    "type": "package",
+    "license": "mit",
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "^5.3",
+        "illuminate/contracts": "^5.3",
+        "alanvaill/profiler": "dev-master",
+        "arrilot/laravel-widgets": "^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlanVaill\\LaravelProfilerAdmin\\": "src/"
+        }
+    }
+}
