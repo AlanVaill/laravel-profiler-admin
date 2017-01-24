@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/AlanVaill/laravel-profiler-admin/badges/gpa.svg)](https://codeclimate.com/github/AlanVaill/laravel-profiler-admin)
+
 # Installation (Co-habit w/ your existing app) 
 Assuming you already have a laravel project started this will install the admin in your project
  1. Change to your project directory `cd path/to/project`
