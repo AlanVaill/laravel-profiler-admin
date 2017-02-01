@@ -22,9 +22,9 @@ class TopQueries extends AbstractWidget
     public function run()
     {
         $queries = QueryLog::select('sql','hash',
-            \DB::raw('avg(execution_time) as avg_execution_time'),
-            \DB::raw('max(execution_time) as max_execution_time'),
-            \DB::raw('min(execution_time) as min_execution_time'))
+            \DB::raw('avg(execution_time/1000) as avg_execution_time'),
+            \DB::raw('max(execution_time/1000) as max_execution_time'),
+            \DB::raw('min(execution_time/1000) as min_execution_time'))
             ->groupBy('sql', 'hash')
             ->orderBy('avg_execution_time', 'desc')
             ->limit(15)

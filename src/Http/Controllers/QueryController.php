@@ -14,8 +14,8 @@ class QueryController
     public function indexAction(Request $request)
     {
         $queries = QueryLog::select(
-            \DB::raw('max(execution_time) as max_execution_time'),
-            \DB::raw('avg(execution_time) as avg_execution_time'),
+            \DB::raw('max(execution_time/1000) as max_execution_time'),
+            \DB::raw('avg(execution_time/1000) as avg_execution_time'),
             'sql',
             'bindings',
             'hash'
